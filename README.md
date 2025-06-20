@@ -3,10 +3,10 @@
 -   I'm a Staff System Software Security Engineer at NVIDIA, focusing on GPU system security. Previously, I was  Security Research Manager at Qualys, driving research on OSS, Linux, and system software under the Threat Research Unit. I’ve also held roles at Microsoft (MSRC), FireEye (FLARE-OTF), and Symantec (STAR Team), specializing in vulnerability and malware research.
 
 Some Of my work are as follow:
-CVE-2025-5054 & CVE-2025-4598 Apport & systemd-coredump, 
-CVE-2025-26466  OpenSSH Client/Server DoS,
-CVE-2025-26465  OpenSSH VerifyHostKeyDNS MitM, 
-CVE-2024-48990 CVE-2024-48991, CVE-2024-48992, CVE-2024-10224, CVE-2024-11003 needrestart Local Privilege Escalations (LPEs),
+CVE-2025-5054 & CVE-2025-4598: Apport & systemd-coredump, 
+CVE-2025-26466: OpenSSH Client/Server DoS,
+CVE-2025-26465: OpenSSH VerifyHostKeyDNS MitM, 
+CVE-2024-48990 CVE-2024-48991, CVE-2024-48992, CVE-2024-10224, CVE-2024-11003: needrestart Local Privilege Escalations (LPEs),
 CVE-2024-6387 regreSSHion: OpenSSH Server RCE ,
 CVE-2024-5535 Openssh SSL_select_next_proto buffer overread,
 CVE-2024-6387 Openssh RCE Due To A Race Condition In Signal Handling,
@@ -59,12 +59,12 @@ CVE-2016-4763 Webkit WKWebView HTTPS traffic interception Cert Validation Bypass
 CVE-2016-7663 CoreFoundation String Parsing Memory Corruption, 
 CVE-2014-9710 Btrfs xattr replacement race condition / ACL bypass,
 CVE-2014-9728 UDF filesystem buffer over-read in fs/udf/inode.c and fs/udf/symlink.c allows local DoS via crafted filesystem image,
-CVE-2014-9761 –glibc nan*() functions stack-based buffer overflow vulnerability,
+CVE-2014-9761 glibc nan*() functions stack-based buffer overflow vulnerability,
 CVE‑2013‑7263 Uninitialized memory leak in recvfrom/recvmsg syscall,
 CVE‑2013‑1792 Race in install_user_keyrings led to NULL-deref DoS under keyctl, 
 CVE‑2013‑1929 Heap BOF in tg3_read_vpd (Broadcom tg3 driver) allowed crash or possible code exec via crafted firmware, 
 CVE‑2013‑7446 UAF in net/unix/af_unix.c (AF_UNIX socket handling),
-CVE-2012-5841 – Cross-Origin Wrapper Filtering Bypass in Mozilla (XSS)
+CVE-2012-5841 Cross-Origin Wrapper Filtering Bypass in Mozilla (XSS)
 
 Tracked Multiple in-the-wild 0-days while working at Fireeye and Microsoft, botnets and malware campaigns, APT research (e.g. Strider, Sowbug, Regin, Duqu 2.0,  Mebroot MBR rootkit)
 
