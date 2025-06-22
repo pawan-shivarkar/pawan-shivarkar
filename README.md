@@ -2,22 +2,30 @@
 - 👀 I’m interested in Security Research (Vulnerability, Malware, Fuzzing, Low-Level)...
 -   I'm a Staff System Software Security Engineer at NVIDIA, focusing on GPU system security. Previously, I was  Security Research Manager at Qualys, driving research on OSS, Linux, and system software under the Threat Research Unit. I’ve also held roles at Microsoft (MSRC), FireEye (FLARE-OTF), and Symantec (STAR Team), specializing in vulnerability and malware research.
 
-Some Of my work are as follow:
+Some of my work are as follow:
 ------------------------------
-- CVE-2025-5054 & CVE-2025-4598: Apport & systemd-coredump,
-- CVE-2025-26466: OpenSSH Client/Server DoS,
-- CVE-2025-26465: OpenSSH VerifyHostKeyDNS MitM,
-- CVE-2024-48990 CVE-2024-48991, CVE-2024-48992, CVE-2024-10224, CVE-2024-11003: needrestart Local Privilege Escalations (LPEs),
-- CVE-2024-6387 regreSSHion: OpenSSH Server RCE ,
+- CVE-2025-6018: Chained LPE in SUSE 15 PAM.
+- CVE-2025-6019: Chained LPE in libblockdev/udisks.
+- CVE-2025-5054 & CVE-2025-4598: Info disclosure via Race Condition in Apport & systemd-coredump,
+- No CVE (Bypass):Three bypasses of Ubuntu's unprivileged user namespace restrictions
+- CVE-2025-26466: OpenSSH Pre-auth DoS,
+- CVE-2025-26465: OpenSSH MitM attack against VerifyHostKeyDNS-enabled clients.
+- CVE-2024-48990: needrestart LPE via PYTHONPATH manipulation.
+- CVE-2024-48991: needrestart LPE via race condition to run fake Python interpreter,
+- CVE-2024-48992: needrestart LPE via RUBYLIB environment variable manipulation,
+- CVE-2024-10224: needrestart LPE via unsanitized input to Modules::ScanDeps library (Perl)
+- CVE-2024-11003: needrestart LPE due to passing unsanitized data to Modules::ScanDeps
+- CVE-2024-6387 regreSSHion: Remote Unauthenticated Code Execution (RCE) in OpenSSH's server on glibc-based Linux systems,
 - CVE-2024-5535 Openssh SSL_select_next_proto buffer overread,
 - CVE-2024-6387 Openssh RCE Due To A Race Condition In Signal Handling,
 - CVE-2024-21431 Hypervisor-Protected Code Integrity (HVCI) Security Feature Bypass Vulnerability,
 - CVE-2024-0132 NVIDIA Container Toolkit 1.16.1 and Earlier TOCTOU Vulnerability,
-- CVE-2023-6246  glibc syslog() Heap Buffer Overflow,
-- glibc qsort() Memory Corruption,
+- CVE-2023-6246  glibc syslog() Heap BOF leading LPE,
+- No CVE (Memory Corruption): Nontransitive comparison functions leading to out-of-bounds read & write in glibc's qsort(),
 - CVE-2023-4911 Looney Tunables: glibc ld.so LPE,
 - CVE-2023-38408 OpenSSH Forwarded ssh-agent RCE,
-- CVE-2023-33865, CVE-2023-33864, and CVE-2023-33863 RenderDoc LPE & RCE,
+- CVE-2023-33865 RenderDoc LPE via symlink attack,
+- CVE-2023-33863 & CVE-2023-33864: Integer Overflow leading to BOF and RCE in RenderDoc,
 - CVE-2023-52489 Linux kernel race in sparsemem's memory_section->usage can trigger kernel panic via crafted PFN overlap, leading to local DoS.
 - CVE-2023-28251 Windows Driver Revocation List Security Feature Bypass Vulnerability,
 - CVE-2023-36043 Open Management Infrastructure Info Disclosure Vulnerability,
