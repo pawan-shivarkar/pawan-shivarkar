@@ -8,6 +8,7 @@ Some of my work are as follow:
 - CVE-2025-6019: Chained LPE in libblockdev/udisks.
 - CVE-2025-5054 & CVE-2025-4598: Info disclosure via Race Condition in Apport & systemd-coredump,
 - No CVE (Bypass):Three bypasses of Ubuntu's unprivileged user namespace restrictions
+- CVE‑2025‑32709, CVE-2023-21768  UAF in Windows WinSock Ancillary Function Driver leading to EoP
 - CVE-2025-26466: OpenSSH Pre-auth DoS,
 - CVE-2025-26465: OpenSSH MitM attack against VerifyHostKeyDNS-enabled clients.
 - CVE-2024-48990: needrestart LPE via PYTHONPATH manipulation.
@@ -40,7 +41,9 @@ Some of my work are as follow:
 - CVE-2022-38023 Netlogon RPC EoP Vulnerability,
 - CVE-2022-41113 Windows Win32 Kernel Subsystem EoP Vulnerability,
 - CVE-2022-37967 Windows Kerberos EoP Vulnerability,
+- CVE‑2022‑22675 AppleAVD out-of-bounds write, kernel code execution,
 - CVE-2022-29900 CVE-2022-23825 AMD CPU Branch Type Confusion,
+- CVE-2022-22674 Apple macOS Intel Graphics Driver Out-of-Bounds Read,
 - CVE-2021-31205 Windows SMB Client Security Feature Bypass Vulnerability,
 - CVE-2021-30883 Apple's IOMobileFrameBuffer Memory Corruption leading Kernel RCE (0day),
 - CVE-2021-1782 macOS Kernel Race Condition Leading to Priv Esc,
@@ -52,6 +55,8 @@ Some of my work are as follow:
 - CVE-2019-8703 macOS Kernel Entitlement Privilege Escalation,
 - CVE-2019-8544 WebKit Memory Corruption via Web Content,
 - CVE-2020-15969 WebRTC UAF leading RCE,
+- CVE-2020-17087 Windows Kernel EOP vulnerability in CNG.sys
+- CVE-2020-0507 Intel Graphics Driver (local DoS via unquoted service path,
 - CVE–2018–0649 Privilege escalation vulnerability in Windows products of ESET,
 - CVE-2017-2376 Safari Address Bar Spoofing,
 - CVE-2017-2440 macOS Kernel Integer Overflow Priv Esc,
