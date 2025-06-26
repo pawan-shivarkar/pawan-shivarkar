@@ -4,107 +4,108 @@
 
 Some of my work and findings (List is blend of individual + collaborative team efforts):
 ------------------------------------------------------------------------------------
-- CVE-2025-6018: Chained LPE in SUSE 15 PAM.
-- CVE-2025-30452 Input validation vulnerability in sandbox component of macOS,
-- CVE-2025-6019: Chained LPE in libblockdev/udisks.
-- CVE-2025-5054 & CVE-2025-4598: Info disclosure via Race Condition in Apport & systemd-coredump,
-- No CVE (Bypass):Three bypasses of Ubuntu's unprivileged user namespace restrictions
-- CVE‑2025‑32709, CVE-2023-21768  UAF in Windows WinSock Ancillary Function Driver leading to EoP
-- CVE-2025-26466: OpenSSH Pre-auth DoS,
-- CVE-2025-26465: OpenSSH MitM attack against VerifyHostKeyDNS-enabled clients.
-- CVE-2024-48990: needrestart LPE via PYTHONPATH manipulation.
-- CVE-2024-48991: needrestart LPE via race condition to run fake Python interpreter,
-- CVE-2024-48992: needrestart LPE via RUBYLIB environment variable manipulation,
-- CVE-2024-10224: needrestart LPE via unsanitized input to Modules::ScanDeps library (Perl)
-- CVE-2024-11003: needrestart LPE due to passing unsanitized data to Modules::ScanDeps
-- CVE-2024-6387 regreSSHion: Remote Unauthenticated Code Execution (RCE) in OpenSSH's server on glibc-based Linux systems,
-- CVE-2024-5535 OpenSSL API function select_next_proto buffer overread,
-- CVE-2024-6387 Openssh RCE Due To A Race Condition In Signal Handling,
-- CVE-2024-21431 Hypervisor-Protected Code Integrity (HVCI) Security Feature Bypass Vulnerability,
-- CVE‑2024‑38616 Fortified‑memset warning fix in carl9170 wireless driver of Linux kernel,
-- CVE-2024-0132 NVIDIA Container Toolkit 1.16.1 and Earlier TOCTOU Vulnerability,
-- CVE-2023-6246  glibc syslog() Heap BOF leading LPE,
-- No CVE (Memory Corruption): Nontransitive comparison functions leading to out-of-bounds read & write in glibc's qsort(),
-- CVE-2023-4911 Looney Tunables: glibc ld.so LPE,
-- CVE-2023-38408 OpenSSH Forwarded ssh-agent RCE,
-- CVE-2023-33865 RenderDoc LPE via symlink attack,
-- CVE-2023-33863 & CVE-2023-33864: Integer Overflow leading to BOF and RCE in RenderDoc,
-- CVE-2023-52489 Linux kernel race in sparsemem's memory_section->usage can trigger kernel panic via crafted PFN overlap, leading to local DoS.
-- CVE-2023-28251 Windows Driver Revocation List Security Feature Bypass Vulnerability,
-- CVE-2023-30768 Improper access control in Intel Server Board S2600WTT BIOS enabling LPE,
-- CVE-2023-36043 Open Management Infrastructure Info Disclosure Vulnerability,
-- CVE-2023-20588 AMD Speculative Leaks Security Notice,
-- CVE-2023-23507 Bounds check vulnerability in Intel Graphics Driver in macOS kernel allowing arbitrary code exec,
-- CVE-2023-3390 UAF vulnerability in Linux kernel netfilter NF_TABLES subsystem,
-- CVE-2023-1532 Chromium Out of bounds read in GPU Video,
-- CVE-2023-0699 Chromium UAF in GPU,
-- CVE-2023-0129: Chromium Heap BOF in Network Service,
-- CVE-2023-20569 Inception: Speculative Return Stack Overflow (SRSO) in AMD Zen CPUs,
-- CVE-2023-21743 Microsoft SharePoint Server Security Feature Bypass Vulnerability,
-- CVE-2023-28746 Register File Data Sampling (RFDS) microarchitectural transient exec info disclosure vuln in Intel Atom processors,
-- CVE-2022-38014 CVE-2022-44689  Windows Subsystem for Linux (WSL2) Kernel EoP Vulnerability,
-- CVE-2022-38023 Netlogon RPC EoP Vulnerability,
-- CVE-2022-41113 Windows Win32 Kernel Subsystem EoP Vulnerability,
+- CVE-2025-6018 — Chained LPE via PAM misconfiguration in SUSE Linux (Leap 15 & SLE 15) on SUSE and openSUSE distros (Qualys TRU),
+- CVE-2025-30452 — Input validation vulnerability in sandbox component of macOS, (INDIVIDUAL)
+- CVE-2025-6019 — Chained LPE in libblockdev via udisks daemon on Linux, (Qualys TRU)
+- CVE-2025-5054 & CVE-2025-4598 — Info disclosure via Race Condition in Apport & systemd-coredump, (Qualys TRU)
+- No CVE (Bypass) — Three bypasses of Ubuntu's unprivileged user namespace restrictions, (Qualys TRU)
+- CVE‑2025‑32709, CVE-2023-21768 — UAF in Windows WinSock Ancillary Function Driver leading to EoP, (INDIVIDUAL)
+- CVE-2025-26466 OpenSSH server/client Pre-auth DoS via unchecked SSH2_MSG_PING packet handling, (Qualys TRU)
+- CVE-2025-26465: OpenSSH client MitM attack against mishandled VerifyHostKeyDNS-enabled clients. (Qualys TRU)
+- CVE-2024-48990 — LPE in needrestart via PYTHONPATH environment variable manipulation on Linux, (Qualys TRU)
+- CVE-2024-48991 — LPE in needrestart via race condition allowing fake Python interpreter exec on Linux, (Qualys TRU)
+- CVE-2024-48992 — LPE in needrestart via RUBYLIB environment variable manipulation on Linux, (Qualys TRU)
+- CVE-2024-10224 — LPE in needrestart via unsanitized input to Perl Modules::ScanDeps lib on Linux, (Qualys TRU)
+- CVE-2024-11003 — LPE in needrestart via unsanitized data passed to Perl Modules::ScanDeps on Linux, (Qualys TRU)
+- CVE-2024-6387 OpenSSH server (sshd) Signal-handler race regression (“regreSSHion”) enabling remote, unauth RCE as root on glibc-based Linux systems,
+- CVE-2024-5535 OpenSSL (typically ALPN/NPN support) API function select_next_proto buffer overread,(INDIVIDUAL)
+- CVE-2024-21431 Hypervisor-Protected Code Integrity (HVCI) Security Feature Bypass Vulnerability on windows,(INDIVIDUAL)
+- CVE‑2024‑38616 Fortified‑memset re‑fix warning in carl9170 wireless driver of Linux kernel (kernel ≤ 5.17),(INDIVIDUAL)
+- CVE-2023-6246  glibc syslog() Heap BOF leading LPE, (Qualys TRU)
+- No CVE (Memory Corruption): Nontransitive comparison functions leading to out-of-bounds read & write in glibc's qsort(), (Qualys TRU)
+- CVE-2023-4911 Looney Tunables: glibc ld.so LPE, (Qualys TRU)
+- CVE-2023-38408 OpenSSH Forwarded ssh-agent RCE, (Qualys TRU)
+- CVE-2023-33865 RenderDoc LPE via symlink attack, (Qualys TRU)
+- CVE-2023-33863 & CVE-2023-33864: Integer Overflow leading to BOF and RCE in RenderDoc, (Qualys TRU)
+- CVE-2023-52489 Linux kernel race in memory_section->usage access within mm/sparsemem subsystem local DoS via NULL pointer deref,(INDIVIDUAL)
+- CVE-2023-28251 Windows Driver Revocation List Security Feature Bypass Vulnerability, (INDIVIDUAL)
+- CVE-2023-30768 Improper access control in Intel Server Board S2600WTT BIOS enabling LPE, (INDIVIDUA;)
+- CVE-2023-36043 Open Management Infrastructure in SCOM, Info Disclosure Vulnerability, (MSRC)
+- CVE-2023-20588 AMD Speculative Leaks Security Notice, (INDIVIDUAL)
+- CVE-2023-23507 Bounds check vulnerability in Intel Graphics Driver in macOS kernel allowing arbitrary code exec, (INDIVIDUAL)
+- CVE-2023-3390 UAF vulnerability in Linux kernel netfilter NF_TABLES subsystem, (INDIVIDUAL)
+- CVE-2023-0129: Chromium Heap BOF in Network Service, (INDIVIDUAL), (MSRC)
+- CVE‑2023‑2313 — Chromium inappropriate sandbox implementation on Windows allowing arbitrary RW post-renderer exploit,(INDIVIDUAL) (MSRC) 
+- CVE-2023-20569 Inception: Speculative Return Stack Overflow (SRSO) in AMD Zen CPUs, (INDIVIDUAL)
+- CVE-2023-21743 Microsoft SharePoint Server Security Feature Bypass Vulnerability, (INDIVIDUAL)
+- CVE-2022-38014 CVE-2022-44689  Windows Subsystem for Linux (WSL2) Kernel EoP Vulnerability, (INDIVIDUAL)
+- CVE-2022-38023 Netlogon RPC EoP due to weak RC4-HMAC encryption on Windows (Server 2008–2022 & clients in AD)
+- CVE-2022-41113 Windows Win32 Kernel Subsystem EoP Vulnerability, (INDIVIDUAL)
 - CVE-2022-37967 Windows Kerberos EoP Vulnerability,
-- CVE‑2022‑22675 AppleAVD out-of-bounds write, kernel code execution,
-- CVE-2022-0730 Improper auth vuln in Cacti allowing LDAP authentication bypass,
-- CVE-2022-1096 Type confusion vuln in V8 JavaScript engine of Google Chrome(0day)
-- CVE-2022-26772 Memory corruption vulnerability in AMD component of macOS Monterey
-- CVE-2022-32793 Out-of-bounds write vulns in Apple GPU drivers for macOS, iOS, watchOS, and tvOS
-- CVE-2022-29900 CVE-2022-23825 AMD CPU Branch Type Confusion,
-- CVE-2022-22674 Apple macOS Intel Graphics Driver Out-of-Bounds Read,
+- CVE‑2022‑22675 AppleAVD out-of-bounds write, kernel code execution, (INDIVIDUAL)
+- CVE-2022-0730 Improper auth vuln in Cacti allowing LDAP authentication bypass, (INDIVIDUAL)
+- CVE-2022-4912 — Chromium Type confusion vulnerability in MathML component allowing heap corruption via crafted HTML, (INDIVIDUAL) (MSRC) 
+- CVE-2022-1096 Type confusion vuln in V8 JavaScript engine of Google Chrome(0day), (INDIVIDUAL)
+- CVE-2022-26772 Memory corruption vulnerability in AMD component of macOS Monterey, (INDIVIDUAL)
+- CVE-2022-32793 Out-of-bounds write vulns in Apple GPU drivers for macOS, iOS, watchOS, and tvOS, (INDIVIDUAL)
+- CVE-2022-29900 CVE-2022-23825 AMD CPU Branch Type Confusion, (INDIVIDUAL)
+- CVE-2022-22674 Apple macOS Intel Graphics Driver Out-of-Bounds Read, (INDIVIDUAL)
 - CVE-2021-31205 Windows SMB Client Security Feature Bypass Vulnerability,
-- CVE-2021-30883 Apple's IOMobileFrameBuffer Memory Corruption leading Kernel RCE (0day),
-- CVE-2021-1782 macOS Kernel Race Condition Leading to Priv Esc,
-- CVE-2021-1871 Logic issue vulnerability in WebKit component of iOS and macOS leading to RCE,
-- CVE-2021-1683 CVE-2021-1638 Windows Bluetooth Security Feature Bypass Vulnerability,
-- CVE-2021-30890 WebKit uXSS via Logic Bug,
-- CVE-2020-15969 WebRTC UAF leading RCE,
-- CVE-2020-17087 Windows Kernel EOP vulnerability in CNG.sys,
-- CVE-2020-0507 Intel Graphics Driver (local DoS via unquoted service path,
-- CVE-2019-5871 Heap BOF vulnerability in Skia graphics library in Google Chrome
-- CVE‑2019‑0101 Intel Unite Authentication Bypass leading to RCE,
-- CVE-2019-0163 Intel TXE Improper input validation enabling LPE,
+- CVE-2021-30883 Apple's IOMobileFrameBuffer Memory Corruption leading Kernel RCE (0day), (INDIVIDUAL)
+- CVE-2021-1782 macOS Kernel Race Condition Leading to Priv Esc, (INDIVIDUAL)
+- CVE-2021-1871 Logic issue vulnerability in WebKit component of iOS and macOS leading to RCE, (INDIVIDUAL)
+- CVE-2021-1683 CVE-2021-1638 Windows Bluetooth Security Feature Bypass Vulnerability, (MSRC)
+- CVE-2021-21214 — Chromium Network API UAF, (INDIVIDUAL) (MSRC) 
+- CVE-2021-21110 — UAF in Google Chrome Safe Browsing component, (INDIVIDUAL) 
+- CVE-2021-30890 WebKit uXSS via Logic Bug on macOS, (INDIVIDUAL)
+- CVE-2020-15969 Chrome WebRTC UAF leading RCE exploitable via crafted HTML page, (INDIVIDUAL)
+- CVE-2020-17087 Windows Kernel EOP vulnerability in CNG.sys, (INDIVIDUAL)
+- CVE-2020-0507 Intel Graphics Driver (local DoS via unquoted service path, (INDIVIDUAL)
+- CVE-2019-5871 Heap BOF vulnerability in Skia graphics library in Google Chrome, (INDIVIDUAL)
+- CVE‑2019‑0101 Intel Unite Authentication Bypass leading to RCE, (INDIVIDUAL)
+- CVE-2019-0163 Intel TXE Improper input validation enabling LPE, (INDIVIDUAL)
 - CVE-2019-1003050 Jenkins Reflected XSS in validateButton form control due to improper URL handling, 
 - CVE-2019-8285 Kaspersky Antivirus Engine Heap BOF Vulnerability,
 - CVE-2019-8703 macOS Kernel Entitlement Privilege Escalation,
-- CVE-2019-8544 WebKit Memory Corruption via Web Content,
+- CVE-2019-8544 WebKit(Safari, WebKitGTK, iTunes, iCloud) Memory Corruption via crafted Web Content leading arbitrary code exec, (INDIVIDUAL)
 - No CVE(Logic Error): Intel 4th–7th Gen Core platform firmware authentication bypass and incorrect TPM measurements, enabling LPE,
-- CVE–2018–0649 Privilege escalation vulnerability in Windows products of ESET,
-- CVE-2018-12218 Intel Processor Improper debug exception and fault handling enabling LPE, 
-- CVE-2018-12371 Firefox Integer overflow in Skia graphics library edge builder leading to RCE,
-- CVE-2018-18098 Intel SGX installer Improper file verification allowing LPE,
-- CVE-2018-3697 Unauthorized access to Intel AMT/ISM/SBT manageability features enabling LPE,
-- CVE-2018-3705 Improper directory permissions in Intel System Defense Utility installer enabling LPE,
-- CVE-2017-2376 Safari Address Bar Spoofing,
-- CVE-2017-2440 macOS Kernel Integer Overflow Priv Esc,
-- CVE-2017-13835 macOS fsck_msdos Memory Corruption Leading to Priv Esc,
-- CVE-2017-5468 Firefox Incorrect ownership model for private browsing data causing privacy info leak,
-- CVE-2017-5130 libxml2 BOF via Malicious XML (RCE),
+- CVE–2018–0649 Untrusted search path vuln in Canon IT Solutions’ ESET / DESlock+ Pro / CompuSec installers on Windows, (INDIVIDUAL)
+- CVE-2018-12218 Intel Processor Improper debug exception and fault handling enabling LPE, (INDIVIDUAL)
+- CVE-2018-12371 Firefox Integer overflow in Skia graphics library edge builder leading to RCE, (INDIVIDUAL)
+- CVE-2018-3697 Unauthorized access to Intel AMT/ISM/SBT manageability features enabling LPE,  (INDIVIDUAL)
+- CVE-2017-2376 Safari Address Bar Spoofing via state‑management flaw,  (INDIVIDUAL)
+- CVE-2017-2440 macOS Kernel Integer Overflow Priv Esc,  (INDIVIDUAL)
+- CVE-2017-13835 macOS fsck_msdos Memory Corruption Leading to Priv Esc,  (INDIVIDUAL)
+- CVE-2017-5468 Firefox Incorrect ownership model for private browsing data causing privacy info leak,  (INDIVIDUAL)
+- CVE-2017-5130 libxml2 Integer overflow in xmlmemory.c leading to heap corruption via crafted XML, (INDIVIDUAL)
 - CVE-2017-13908 SMB File Permission Bypass Execution,
-- CVE-2017-13843 macOS Kernel Memory Corruption Leading to Kernel Priv Esc(Kernel RCE),
-- CVE‑2016‑4307 DOS in the IOCTL handling functionality of Kaspersky Internet Security KL1 driver,
-- CVE-2017-7127 Apple SQLite memory corruption leading to arbitrary code execution,
-- CVE‑2017‑15118 Stack-based BOF in QEMU’s NBD server implementation (export-name length mishandling),
-- CVE‑2017‑2620 Out‑of‑bounds access vuln in QEMU’s Cirrus CLGD 54xx VGA emulator,
-- CVE‑2016‑9603 Heap BOF in QEMU’s Cirrus CLGD 54xx VGA emulator VNC display driver,
-- CVE-2016-1849 Safari Incomplete History Deletion due to improper data clearing,
-- CVE-2016-4726 Apple's IOAcceleratorFamily memory corruption leading to kernel RCE.
-- CVE-2016-4745 MacOS Kerberos V5 PAM module user enumeration via Timing Side-Channel,
-- CVE-2016-4763 Webkit WKWebView HTTPS traffic interception Cert Validation Bypass,
-- CVE-2016-7663 Apples CoreFoundation String Parsing Memory Corruption,
-- CVE-2015-4487 Firefox BOF in Graphite2 via malicious font rendering,
-- CVE-2015-0817 Firefox UAF during text processing, allowing RCE,
-- CVE-2014-9710 Btrfs xattr replacement race condition / ACL bypass,
-- CVE-2014-0198 OpenSSL Recursion flaw in DTLS handshake packet handling leading to remote DoS,
-- CVE-2014-1488 Firefox BOF in Cairo Graphics library when rendering content leading to RCE,
-- CVE-2014-9728 UDF filesystem buffer over-read in fs/udf/inode.c and fs/udf/symlink.c allows local DoS via crafted filesystem image,
-- CVE-2014-9761 glibc nan*() functions stack-based buffer overflow vulnerability,
-- CVE‑2013‑7263 Uninitialized memory leak in recvfrom/recvmsg syscall,
-- CVE‑2013‑1792 Race in install_user_keyrings led to NULL-deref DoS under keyctl,
-- CVE‑2013‑1929 Heap BOF in tg3_read_vpd (Broadcom tg3 driver) allowed crash or possible code exec via crafted firmware,
-- CVE‑2013‑7446 UAF in net/unix/af_unix.c (AF_UNIX socket handling),
-- CVE-2012-5841 Cross-Origin Wrapper Filtering Bypass in Mozilla (XSS)
+- CVE-2017-13843 macOS Kernel Memory Corruption Leading to Kernel Priv Esc(Kernel RCE),  (INDIVIDUAL)
+- CVE‑2016‑4307 DOS in the IOCTL handling functionality of Kaspersky Internet Security KL1 driver, 
+- CVE-2017-7127 Apple SQLite memory corruption leading to arbitrary code execution, (INDIVIDUAL)
+- CVE‑2017‑15118 Stack-based BOF in QEMU’s NBD server implementation (export-name length mishandling), (INDIVIDUAL)
+- CVE‑2017‑2620 Out‑of‑bounds access vuln in QEMU’s Cirrus CLGD 54xx VGA emulator, (INDIVIDUAL)
+- CVE‑2016‑9603 Heap BOF in QEMU’s Cirrus CLGD 54xx VGA emulator VNC display driver, (INDIVIDUAL)
+- CVE-2016-1849 Safari Incomplete History Deletion due to improper data clearing, (INDIVIDUAL)
+- CVE-2016-4726 Apple's IOAcceleratorFamily memory corruption leading to kernel RCE. (INDIVIDUAL)
+- CVE-2016-4745 MacOS Kerberos V5 PAM module user enumeration via Timing Side-Channel, (INDIVIDUAL)
+- CVE-2016-7663 Apples CoreFoundation String Parsing Memory Corruption, (INDIVIDUAL)
+- CVE-2015-4487 Firefox BOF in Graphite2 via malicious font rendering, (INDIVIDUAL)
+- CVE-2015-0817 — Firefox UAF during text processing, allowing RCE, (INDIVIDUAL)
+- CVE-2014-0198 — OpenSSL Recursion flaw in DTLS handshake packet handling leading to remote DoS, (INDIVIDUAL)
+- CVE-2014-1488 — Firefox BOF in Cairo Graphics library when rendering content leading to RCE,  (INDIVIDUAL)
+- CVE-2014-9761 — glibc nan*() functions stack-based buffer overflow vulnerability, (INDIVIDUAL)
+- CVE-2013-4536 — QEMU savevm/migration data tampering flaw allowing host memory corruption and RCE (INDIVIDUAL)
+- CVE‑2013‑5792 — Oracle E-Business Suite remote info disclosure in vuln (Apache), exploitable over HTTP. (INDIVIDUAL)
+- CVE-2013-4312 — Linux kernel UNIX socket file descriptor passing flaw enabling local DoS via memory exhaustion (Oracle Kernel Team)
+- CVE-2013-2635 — Linux kernel rtnetlink message handling flaw causing uninitialized stack memory disclosure (Oracle Kernel Team)
+- CVE-2013-0914 — Linux kernel execve sa_restorer preservation flaw allowing ASLR bypass, (Oracle Kernel Team)
+- CVE-2013-1929 — Linux kernel Broadcom tg3_read_vpd heap buffer overflow via crafted VPD data, (Oracle Kernel Team)
+- CVE-2012-0056 — Linux kernel /proc/[pid]/mem write permission vulnerability allowing local privilege escalation (Oracle Kernel Team)
+- CVE-2012-4508 — Linux kernel ext4 race flaw leaking deleted file extent metadata (local info disclosure) (Oracle Kernel Team)
+- CVE-2012-6542 — Linux kernel LLC sockets uninitialized stack data leak (local info disclosure), (Oracle Kernel Team)
+- CVE-2012-6548 — Linux kernel UDF filesystem uninitialized structure fields info leak (local info disclosure), (Oracle Kernel Team)
+
+- CVE-2014-0101 — Linux kernel netfilter conntrack OVS flaw allowing remote DoS via invalid connection tracking data
 
 Tracked Multiple in-the-wild 0-days while working at Fireeye and Microsoft, botnets and malware campaigns, APT research (e.g. Strider, Sowbug, Regin, Duqu 2.0,  Mebroot MBR rootkit)
 
