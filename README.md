@@ -26,6 +26,11 @@ Some of my work: (_This is currated list of my findings Individual + Collaborati
   - [CVE‑2020‑0796](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-0796)  – SMBv3 compression integer‑overflow wormable RCE [(SMBGhost)](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-0796) (MSRC) (Involved in mitigation)
   - [CVE‑2024‑43447](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43447) – SMBv3 server double‑free RCE on Windows Server 2022, [(Individual)](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43447)
   - [CVE‑2023‑23374](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-23374) – Microsoft Edge (Chromium/Android) RCE,[(Individual)](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-23374) (MSRC)
+  - CVE‑2024‑3411  – Weak IPMI session auth randomness in BMCs allows remote hijack and full server compromise, Affects multiple OEM BMCs.
+  - CVE‑2023‑28863 – AMI MegaRAC BMC Predictable IPMI session IDs enables remote unauth IPMI sessions hijack and full server control.
+  - CVE‑2020‑0594  – Intel AMT/ISM firmware OOB read in IPv6 subsystem of allows unauthenticated remote escalation via network access
+  - CVE‑2020‑0595  – Intel AMT/ISM firmware UAF in IPv6 handler of enabling unauthenticated remote privilege escalation
+  - CVE-2019-2294  — Qualcomm Audio DSP heap corruption via hardcoded heap guard magic in memory management, (Individual)
   - [CVE‑2022‑24537](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-24537) – Hyper‑V guest‑to‑host RCE via improper sync race in driver, (MSRC)
   - [CVE‑2021‑34450](https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2021-34450) – Hyper‑V guest‑to‑host RCE via network Hyper‑V sync bug (MSRC) [(Individual)](https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2021-34450)
   - [CVE-2025-30452](https://support.apple.com/en-us/122373) — Input validation vulnerability in sandbox component of macOS, [(Individual)] (https://support.apple.com/en-us/122373)
