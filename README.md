@@ -1,7 +1,7 @@
-[Pawan Shivarkar — Staff System Software Security Engineer @ NVIDIA](https://www.nvidia.com)
+[Pawan Shivarkar — Staff Offensive Security Researcher @ NVIDIA](https://www.nvidia.com)
 
-- 👋 Hi, I’m [**Pawan Shivarkar**](https://github.com/pawan-shivarkar), A Security Researcher interested in (Vulnerability Research, Malware, Fuzzing, Low-Level)...
--    Currently working as a Staff System Software Security Engineer at NVIDIA. Performing Offensive Research with GPU System Software team.
+- 👋 Hi, I’m [**Pawan Shivarkar**](https://github.com/pawan-shivarkar),] A Security Researcher interested in Vulnerability Research, Malware, Fuzzing, and Low-Level Security.
+- Currently working as a [Staff Offensive Security Researcher @ NVIDIA](https://www.nvidia.com), focusing on Embedded Firmware and critical System Software across HPC, AI/cloud, autonomous and IoT platforms performing offensive research, vulnerability discovery, and exploitation across diverse HW/SW targets.
 -    Previously, I was [Manager, Security Research @ Qualys](https://www.qualys.com), Lead Vulnerabiity Research on OSS, Linux, and system software under the Threat Research Unit.  
 -    I’ve also held roles at [Microsoft](https://www.microsoft.com/en-us/msrc) (MSRC), [FireEye](https://www.fireeye.com) (FLARE-OTF), and [Symantec](https://www.broadcom.com/company/newsroom/press-releases?filtr=Symantec) (STAR Team), specializing in vulnerability and malware research.
 
@@ -30,15 +30,18 @@ Some of my work: (_This is currated list of my findings Individual + Collaborati
   - CVE‑2023‑28863 – AMI MegaRAC BMC Predictable IPMI session IDs enables remote unauth IPMI sessions hijack and full server control.
   - CVE‑2020‑0594  – Intel AMT/ISM firmware OOB read in IPv6 subsystem of allows unauthenticated remote escalation via network access
   - CVE‑2020‑0595  – Intel AMT/ISM firmware UAF in IPv6 handler of enabling unauthenticated remote privilege escalation
-  - CVE-2019-2294  — Qualcomm Audio DSP heap corruption via hardcoded heap guard magic in memory management, (Individual)
+  - [CVE-2019-2294](https://docs.qualcomm.com/product/publicresources/securitybulletin/august-2019-bulletin.html)  — Qualcomm Audio DSP heap corruption via hardcoded heap guard magic in memory management, [(Individual)](https://docs.qualcomm.com/product/publicresources/securitybulletin/august-2019-bulletin.html)
   - [CVE‑2022‑24537](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-24537) – Hyper‑V guest‑to‑host RCE via improper sync race in driver, (MSRC)
   - [CVE‑2021‑34450](https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2021-34450) – Hyper‑V guest‑to‑host RCE via network Hyper‑V sync bug (MSRC) [(Individual)](https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2021-34450)
-  - [CVE-2025-30452](https://support.apple.com/en-us/122373) — Input validation vulnerability in sandbox component of macOS, [(Individual)] (https://support.apple.com/en-us/122373)
+  - [CVE-2025-30452](https://support.apple.com/en-us/122373) — Input validation vulnerability in sandbox component of macOS, [(Individual)](https://support.apple.com/en-us/122373)
   - [CVE-2019-8285](https://securityvulnerability.io/vulnerability/CVE-2019-8285) — Kaspersky Antivirus Engine Heap BOF Vulnerability, [(Individual)](https://securityvulnerability.io/vulnerability/CVE-2019-8285)
   - [CVE-2017-13843](https://support.apple.com/en-us/103804) — macOS Kernel Memory Corruption Leading to Kernel Priv Esc(Kernel RCE), [(Individual)](https://support.apple.com/en-us/103804)
   - [CVE-2016-4726](https://support.apple.com/en-mk/103800)— Apple's IOAcceleratorFamily memory corruption leading to kernel RCE. [(Individual)](https://support.apple.com/en-mk/103800)
   - [CVE-2014-0198](https://bugzilla.redhat.com/show_bug.cgi?id=1093837) — OpenSSL Recursion flaw in DTLS handshake packet handling leading to remote DoS, [(Individual)](https://bugzilla.redhat.com/show_bug.cgi?id=1093837)
-  - [CVE-2013-4536]() — QEMU savevm/migration data tampering flaw allowing host memory corruption and RCE [(Individual)]()
+  - CVE-2012-1721  — Oracle Java SE Rhino script engine flaw in ≤7u4/6u32, remote unauth code exec via crafted Java applet/web start app.
+  - CVE‑2016‑0002  — IE 8–11 RCE in VBScript/JScript engines via memory corruption from malformed objects.
+  - No CVE (RCE)   – Stack BOF in Symantec AV engine via crafted RAR archive triggers RCE during file scan.
+  - No CVE(Chain Exploit): Chrome exploit: WebAssembly type confusion + V8 OOB read + sandbox escape, (Individual)
  
 - ⚡ **High‑Impact (_This is a curated list that I feel deserves a mention regardless of CVSS score_)**
   - No CVE (Bypass) — Three bypasses of Ubuntu's unprivileged user namespace restrictions, (Qualys TRU)
@@ -57,12 +60,12 @@ Some of my work: (_This is currated list of my findings Individual + Collaborati
   - CVE-2016-7663 — Apples CoreFoundation String Parsing Memory Corruption, (Individual)
 
 
-Tracked Multiple in-the-wild 0-days while working at Fireeye and Microsoft, botnets and malware campaigns, APT research (e.g. Strider, Sowbug, Regin, Duqu 2.0,  Mebroot MBR rootkit).
+Tracked Multiple in-the-wild 0-days while working at Fireeye and Microsoft, botnets and malware campaigns, APT research (e.g. Strider, Sowbug, Regin, Duqu 2.0, LoJax EFI Bootkit  Mebroot MBR rootkit, Zacinlo, APT 41, Turla (Uroburos)).
 
 *Note: These are some of my vulns I discovered through my independent research, team collaborations, and Individual work at Qualys, MSRC, and the Oracle kernel team.
 
 - 📫 How to reach me - (pawan@tutanota.de) ...
-
+                        (pvn.1989@gmail.com)
 <!---
 pawan-shivarkar/pawan-shivarkar is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
